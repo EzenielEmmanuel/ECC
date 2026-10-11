@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1",
+  "policy": {
+    "default_execution": "disabled",
+    "credentials": "never_in_repo",
+    "require_human_approval": true,
+    "source_registry": "EzenielEmmanuel/ORIS-Workshop"
+  },
+  "resources": [
+    {
+      "id": "octop",
+      "name": "Octop",
+      "upstream": "https://github.com/TencentCloud/Octop",
+      "category": "agent_orchestration",
+      "priority": 1,
+      "status": "unverified",
+      "execution_enabled": false,
+      "adapter": "planned",
+      "checks": [
+        "license",
+        "security",
+        "sandbox",
+        "auth"
+      ]
+    },
+    {
+      "id": "freellmapi",
+      "name": "FreeLLMAPI",
+      "upstream": "https://github.com/tashfeenahmed/freellmapi",
+      "category": "model_gateway",
+      "priority": 2,
+      "status": "unverified",
+      "execution_enabled": false,
+      "adapter": "planned",
+      "checks": [
+        "license",
+        "provider_terms",
+        "secrets",
+        "quota"
+      ]
+    },
+    {
+      "id": "ornith",
+      "name": "Ornith",
+      "upstream": "https://github.com/ornith-ai/Ornith-1",
+      "category": "adaptive_workflow_research",
+      "priority": 3,
+      "status": "unverified",
+      "execution_enabled": false,
+      "adapter": "planned",
+      "checks": [
+        "source",
+        "weights",
+        "license",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "ltx-2",
+      "name": "LTX 2.5 candidate",
+      "upstream": "https://github.com/Lightricks/LTX-2",
+      "category": "video_generation",
+      "priority": 4,
+      "status": "unverified",
+      "execution_enabled": false,
+      "adapter": "planned",
+      "checks": [
+        "version",
+        "code_license",
+        "weights_license",
+        "gpu_cost"
+      ]
+    }
+  ]
+}
