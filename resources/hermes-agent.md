@@ -24,22 +24,23 @@
 
 ## Why it matters to ORIS
 
-Hermes is a strong candidate for the adaptive personal-intelligence layer of ORIS. Its memory, skill evolution, user modeling, delegation and multi-channel continuity align closely with the goal of an assistant that develops with its user over time.
+Hermes is a strong candidate for its own ORIS-evolved agent fork. The intended path mirrors the evolution of OpenCode into ORIS Code: preserve Hermes as a complete working foundation, upgrade its frontend and user experience, and progressively expand its native capabilities according to its particular strengths in memory, learning, user modeling, delegation and multi-channel continuity.
 
 ## Fork and adaptation status
 
 Hermes Agent is MIT licensed. Its source may be copied, modified, privately hosted, commercially used and redistributed while retaining the copyright and license notice. A normal GitHub fork of this public repository would remain public. For confidential ORIS development, import or mirror the source into a new private repository and record the upstream remote manually.
 
-## Proposed ORIS evolution
+## Independent evolutionary-fork strategy
 
-- Replace the frontend, visual identity and interaction model with an ORIS interface.
-- Add ORIS governance, authorization, cost controls and auditable execution.
-- Map persistent memory into the ORIS project-state and knowledge architecture.
-- Govern automatic skill creation through review, provenance and rollback.
-- Connect Hermes to OmniRoute for controlled free, subscription, paid and local model routing.
-- Integrate ORIS worldview selection without weakening evidence provenance.
-- Add voice and real-time conversational interfaces as separate governed adapters.
-- Keep provider, messaging and tool permissions modular and least-privileged.
+Hermes should remain a distinct high-level agent project rather than being reduced to a component of another fork. Development should proceed in stages:
+
+1. Reproduce and stabilize the complete upstream application.
+2. Upgrade its existing frontend, navigation, visual system and interaction experience.
+3. Establish the ORIS identity and governance layer while preserving upstream attribution.
+4. Improve Hermes's strongest native faculties: persistent memory, learning, evolving skills, user modeling and multi-channel continuity.
+5. Add new capabilities incrementally, with tests and rollback for every major subsystem.
+6. Connect optional infrastructure such as OmniRoute only where it improves this fork without erasing its distinct identity.
+7. Maintain this evolved Hermes line as a separate ORIS family application, comparable to the evolution of OpenCode into ORIS Code.
 
 ## Evaluation plan
 
