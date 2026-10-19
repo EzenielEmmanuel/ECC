@@ -23,7 +23,7 @@
 
 ## Why it matters to ORIS
 
-OpenClaw is a strong candidate for the embodiment, communications and device-integration layer of ORIS. Its broad platform reach and plugin architecture could provide the connective structure through which ORIS communicates, acts and maintains continuity across devices.
+OpenClaw is a strong candidate for its own ORIS-evolved high-level agent fork. The intended path mirrors the evolution of OpenCode into ORIS Code: retain OpenClaw as a complete working application, upgrade its frontend and user experience, then progressively extend its capabilities according to its strengths in communications, devices, plugins and local-first personal assistance.
 
 ## Fork and adaptation status
 
@@ -31,16 +31,17 @@ OpenClaw's first-party source is MIT licensed. It may be copied, modified, priva
 
 A normal GitHub fork of this public repository would remain public. Confidential ORIS work should begin as a private imported or mirrored repository with an upstream remote maintained separately.
 
-## Proposed ORIS evolution
+## Independent evolutionary-fork strategy
 
-- Replace the lobster-themed frontend and product presentation with the ORIS visual system.
-- Preserve the modular gateway, channels, applications, nodes and plugin interfaces.
-- Add ORIS authorization, cost controls, explainability and execution records.
-- Integrate Hermes-derived learning, memory and skill-evolution concepts behind governance gates.
-- Connect OmniRoute as a controlled model-routing option.
-- Add explicit separation between personal memory, project memory and shared-team memory.
-- Use restricted sandboxes for shell, browser, filesystem and device actions.
-- Keep each channel and tool independently revocable.
+OpenClaw should remain a distinct high-level agent project rather than being reduced to a subsystem of another fork. Development should proceed in stages:
+
+1. Reproduce and stabilize the complete upstream application.
+2. Upgrade its existing frontend, navigation, visual system and interaction experience.
+3. Establish the ORIS identity and governance layer while preserving upstream attribution.
+4. Improve OpenClaw's strongest native faculties: channels, device reach, plugins, gateways and local-first operation.
+5. Add new capabilities incrementally, with tests and rollback for every major subsystem.
+6. Connect optional model routing, memory and intelligence services only where they strengthen this fork without erasing its distinct identity.
+7. Maintain this evolved OpenClaw line as a separate ORIS family application, comparable to the evolution of OpenCode into ORIS Code.
 
 ## Evaluation plan
 
