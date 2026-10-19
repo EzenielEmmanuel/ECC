@@ -35,13 +35,16 @@ The released source files and Grok-1 weights are licensed under Apache 2.0. They
 - Far beyond the present low-cost ORIS deployment target
 - The original context length and age make it less practical than newer efficient models for production
 
-## Recommended evolution path
+## Independent evolutionary-fork strategy
 
-1. Preserve Grok-1 as an architectural and licensing reference.
-2. Study its sparse expert routing for ORIS specialized-brain activation.
-3. Evaluate compatible quantized community conversions separately, including their provenance and licenses.
-4. Place any model behind an ORIS-governed agent harness rather than treating the checkpoint as a complete assistant.
-5. Delay full-weight deployment until suitable infrastructure and a clear experiment justify the cost.
+Grok-1 differs from Hermes and OpenClaw because it is a model rather than a complete agent with an existing frontend. Its independent evolution should therefore proceed as a model-centered ORIS project:
+
+1. Preserve and study the complete released Grok-1 model architecture.
+2. Explore efficient serving, quantization and specialized expert routing when infrastructure permits.
+3. Build an upgraded ORIS frontend and agent experience around the model rather than treating the checkpoint alone as an application.
+4. Add memory, tools, governance and other capabilities incrementally around its particular intelligence strengths.
+5. Keep this Grok-derived experimental line distinct, with its own tests, identity and roadmap.
+6. Delay full-weight deployment until suitable infrastructure and a clear experiment justify the cost.
 
 ## Governance
 
