@@ -1,10 +1,19 @@
 {
-  "schema_version": "0.1",
+  "schema_version": "0.2",
   "policy": {
     "default_execution": "disabled",
     "credentials": "never_in_repo",
     "require_human_approval": true,
-    "source_registry": "EzenielEmmanuel/ORIS-Workshop"
+    "source_registry": "EzenielEmmanuel/ORIS-Workshop",
+    "verification": {
+      "performed_on": "2026-10-11",
+      "method": "Read upstream README, LICENSE and package manifests on GitHub and Hugging Face. No code was executed, no weights were downloaded, no credentials were issued.",
+      "resources_verified": [
+        "freellmapi",
+        "ornith",
+        "ltx-2"
+      ]
+    }
   },
   "resources": [
     {
@@ -29,9 +38,18 @@
       "upstream": "https://github.com/tashfeenahmed/freellmapi",
       "category": "model_gateway",
       "priority": 2,
-      "status": "unverified",
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "license": "MIT",
+      "license_source": "https://github.com/tashfeenahmed/freellmapi/blob/main/LICENSE",
+      "runtime_requirements": {
+        "node": ">=20.18.0 <25.0.0",
+        "npm": ">=10.0.0"
+      },
+      "cost_model": "self-hosted router over upstream free provider tiers",
       "execution_enabled": false,
-      "adapter": "planned",
+      "adapter": "socrf.adapters.freellmapi_dry_run",
+      "notes": "Upstream describes the project as personal experimentation only; commercial use inside SOCRF products needs a usage review. Provider keys must come from a credential vault.",
       "checks": [
         "license",
         "provider_terms",
@@ -45,9 +63,20 @@
       "upstream": "https://github.com/ornith-ai/Ornith-1",
       "category": "adaptive_workflow_research",
       "priority": 3,
-      "status": "unverified",
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "license": "MIT",
+      "license_source": "https://huggingface.co/ornith-ai/Ornith-1.5-9B",
+      "checkpoint": "ornith-ai/Ornith-1.5-9B",
+      "runtime_requirements": {
+        "transformers": ">=5.8.1",
+        "vllm": ">=0.19.1",
+        "sglang": ">=0.5.9"
+      },
+      "cost_model": "GPU rental or on-premise 80 GB GPU; weights are free and MIT licensed",
       "execution_enabled": false,
-      "adapter": "planned",
+      "adapter": "socrf.adapters.ornith_dry_run",
+      "notes": "Upstream repository ships documentation only and no code. The 9B checkpoint is roughly 19 GB in bf16 and needs a single 80 GB GPU. Upstream README serving examples also reference a deepreinforce-ai namespace that does not match the published ornith-ai checkpoints.",
       "checks": [
         "source",
         "weights",
@@ -61,9 +90,19 @@
       "upstream": "https://github.com/Lightricks/LTX-2",
       "category": "video_generation",
       "priority": 4,
-      "status": "unverified",
+      "status": "verified",
+      "verified_on": "2026-10-11",
+      "license": "LTX Community License Agreement (custom, non-OSI)",
+      "license_source": "https://github.com/Lightricks/LTX-2/blob/main/LICENSE",
+      "weights_repo": "https://huggingface.co/Lightricks/LTX-2.5",
+      "runtime_requirements": {
+        "python": ">=3.11",
+        "torch": "2.13+cu132"
+      },
+      "cost_model": "GPU rental or on-premise CUDA GPU; roughly 66 GiB of gated weights",
       "execution_enabled": false,
-      "adapter": "planned",
+      "adapter": "socrf.adapters.ltx_dry_run",
+      "notes": "Not open source. Weights are gated on Hugging Face behind accepted model terms, and LTX-2.3 and earlier sit under a separate license file. Legal review required before any commercial embedding.",
       "checks": [
         "version",
         "code_license",
