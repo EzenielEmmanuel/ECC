@@ -47,6 +47,9 @@
         "npm": ">=10.0.0"
       },
       "cost_model": "self-hosted router over upstream free provider tiers",
+      "connection_plan": "socrf/FREELLMAPI-CONNECTION-PLAN.md",
+      "connection_module": "socrf.adapters.freellmapi_client",
+      "connection_status": "planned",
       "execution_enabled": false,
       "adapter": "socrf.adapters.freellmapi_dry_run",
       "notes": "Upstream describes the project as personal experimentation only; commercial use inside SOCRF products needs a usage review. Provider keys must come from a credential vault.",
